@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.main_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fon.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 30%;
+    height: 60%;
+    align-self: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fce38a;
+
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.input_fild {
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: rgb(199, 197, 197);
+    width: 80%;
+    height: 20px;
+}
+
+.buton_add {
+    font-size: 12px;
+}
+
+.date-picker {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#datePicker {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    color: rgb(188, 13, 188);
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+li i {
+    position: sticky;
+    left: 0;
+    padding-left: 4px;
+    margin-left: -4px;
+    background-color: #333;
+}
+
+li span.due-date {
+    position: sticky;
+    right: 0;
+    padding-right: 4px;
+    margin-right: -4px;
+    background-color: #333;
+}
+
+li span.task-text,
+li span.due-date {
+    word-wrap: break-word;
+}
+
+li.done span.task-text {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #fce38a;
+}
+
+li.done span.due-date {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #fce38a;
+}
+
+button {
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+
+
+#taskInput {
+    border: 2px solid #fce38a;
+}
+
+i.fas.fa-calendar-day {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 30px 0 30px;
+}
+
+i.fas.fa-calendar-day:hover {
+    color: #fce38a;
+}
+
+
+i.far.fa-square-check {
+    cursor: pointer;
+}
+
+
+i.far.fa-square-check:hover {
+    color: #fce38a;
+}
+
+i.far.fa-trash-can {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+i.far.fa-trash-can:hover {
+    color: #fce38a;
+}
+
+i.far.fa-pen-to-square {
+    cursor: pointer;
+}
+
+i.far.fa-pen-to-square:hover {
+    color: #fce38a;
+}
+
+i.far.fa-square-plus:hover {
+    color: #fce38a;
+}
+
+i.far.fa-square-plus {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+i.far.fa-square-plus:hover {
+    color: #fce38a;
+}

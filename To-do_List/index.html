@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:300i,wght@400;700&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28e85c6590.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="main_img">
+        <div class="container">
+
+            <h1>To-Do List</h1>
+            <input type="text" id="taskInput" placeholder="Add a new task" class="input_fild">
+            <i class="fas fa-calendar-day" onclick="toggleDatePicker()"></i>
+            <div id="datePicker" class="date-picker">
+                <input type="date" id="dueDate">
+                <button onclick="addTaskWithDate()" class="buton_add">Add</button>
+                <button onclick="hideDatePicker()" class="buton_add">Cancel</button>
+            </div>
+
+        <i class="far fa-square-plus" onclick="addTask()"></i>
+
+
+
+            <ul id="taskList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/to_do_list.js"></script>
+</body>
+
+</html>
